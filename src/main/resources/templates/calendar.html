@@ -1,2 +1,9 @@
-<div th:include="layouts/header :: header"></div>
-<div th:include="layouts/footer :: footer"></div>
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<div th:replace="layouts/fragments :: header"></div>
+<div class="wrapper">
+    <div id="calendar"><script src="/static/js/calendar.js"></script></div>
+</div>
+<div th:replace="layouts/fragments :: footer"></div>
+</html>
